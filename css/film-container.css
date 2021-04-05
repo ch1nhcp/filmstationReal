@@ -1,0 +1,52 @@
+
+:root {
+    --color1: #708ed2;
+    --color2: #272532;
+    --color3: #ebe5e2;
+    --color4: #83cfdf;
+    --color5: #3646DA;
+    --color6: #202C3A;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  /* body {
+    background: var(--color6) !important;
+  } */
+  
+  /* nav {
+    background: #000000;
+  } */
+  /* nav a {
+    color: #ebe5e2;
+    font-size: 2.5rem !important;
+  } */
+  
+  .movie-card {
+    padding: 10px;
+  }
+  .movie-description {
+    background: #079fb9;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .movie-title {
+    color: var(--color3);
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .movie-vote {
+    background: var(--color2);
+    color: rgb(255, 204, 108);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .movie-img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    overflow: hidden;
+    max-height: 100% !important;
+  }
+  /* =============================== */

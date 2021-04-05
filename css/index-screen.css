@@ -1,0 +1,41 @@
+
+
+/* ------------------------------------------------- */
+/* #home {
+  height: 100vh;
+} */
+
+#tieude {
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* ====================== Button Go! */
+#home .buttons {
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#home .buttons a {
+  display: inline-block;
+  /* margin: 15px 30px; */
+  color: #48dbfb;
+  font-size: 15px;
+  font-weight: 500;
+  width: 140px;
+  border: 1px solid #48dbfb;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: 0.2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2) {
+  background-color: #48dbfb;
+  color: #fff;
+}
