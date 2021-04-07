@@ -25,7 +25,7 @@ $template.innerHTML = `
                     </h1>
 
                     <!-- Brief -->
-                    <p class="text" id="text">
+                    <p class="brief" id="brief">
                     The antsy bingers of Netflix will eagerly anticipate the
                     digital release of the Survive soundtrack, out today.
                     </p>
@@ -57,7 +57,7 @@ export default class TodayFilm extends HTMLElement {
     }
 
     attributeChangedCallback(attrName, oldValue, newValue) {
-        switch(attrName){
+         switch(attrName){
             case 'date':
                 this.$date.innerHTML = newValue;
                 break;
@@ -74,7 +74,7 @@ export default class TodayFilm extends HTMLElement {
                 this.$brief.innerHTML = newValue;
                 break;
             case 'favorite':
-                this.$favorite.innerHTML = newValue;
+                this.$favorite.innerHTML = (newValue != 'undefined') ? newValue : 28;
                 break;
         }
     }

@@ -1,15 +1,16 @@
 
 
 /* ------------------------------------------------- */
-/* #home {
-  height: 100vh;
-} */
+#home {
+  background-size: cover !important;
+  height: 86vh;
+}
 
 #tieude {
   text-align: center;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  padding-top: 60px;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -21,7 +22,7 @@
   cursor: pointer;
 }
 
-#home .buttons a {
+#home .buttons button {
   display: inline-block;
   /* margin: 15px 30px; */
   color: #48dbfb;
@@ -34,8 +35,8 @@
   transition: 0.2s linear;
 }
 
-#home .buttons a:hover,
-#home .buttons a:nth-child(2) {
+#home .buttons button:hover,
+#home .buttons button:nth-child(2) {
   background-color: #48dbfb;
   color: #fff;
 }

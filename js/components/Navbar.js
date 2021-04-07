@@ -11,10 +11,10 @@ $template.innerHTML = /*html*/ `
                 <span></span>
             </button>
             <div class="navbar-menu">
-                <a href="/trending/index.html">Trending</a>
-                <a href="/bookTickets/book.html">Book tickets</a>
+                <a href="#/trending">Trending</a>
+                <a href="#/theater">Theater</a>
                 <a href="/Our Team/index.html">About Us</a>
-                <a id="sign-in-link" href="/auth/auth.html">Sign In</a>
+                <a id="sign-in-link" href="#/auth">Sign In</a>
                 <a id="profile-link" href="#"></a>
             </div>
         </div>

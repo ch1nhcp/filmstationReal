@@ -1,7 +1,9 @@
 const $template = document.createElement('template');
 $template.innerHTML = /*html*/ `
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <nav-bar></nav-bar> --> 
     <div id="auth-screen" class="container d-flex justify-content-around border rounded mt-5 p-3">
+    
         <login-form></login-form>
         <register-form></register-form>
     </div>

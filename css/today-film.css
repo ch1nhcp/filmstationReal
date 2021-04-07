@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 * {
   box-sizing: border-box;
+  background-size: cover;
 }
 
 body {
@@ -25,8 +26,8 @@ a {
 
 h1 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  margin-bottom: 5px;
+  /* font-weight: 300; */
+  margin-bottom: 30px;
 }
 
 /* .row {
@@ -121,6 +122,7 @@ h1 {
 #today-film .example-2 .wrapper {
   background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg)
     center/cover no-repeat;
+    background-size: cover  !important;
 }
 #today-film .example-2 .wrapper:hover .menu-content span {
   transform: translate(-50%, -10px);

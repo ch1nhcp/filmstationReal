@@ -1,0 +1,3 @@
+Menu responsive chưa hoạt động
+Đăng ký đăng nhập chưa có navbar
+css của nav trang trending và trang book ticket (k dùng bootstrap)

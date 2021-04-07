@@ -24,6 +24,7 @@ export default class FilmList extends HTMLElement {
       this.$content.innerHTML = "";
       for (let filmData of data) {
         let $filmContainer = new FilmContainer();
+        $filmContainer.id = filmData.id;
         $filmContainer.setAttribute("title", filmData.title);
         $filmContainer.setAttribute("poster", filmData.poster_path);
         $filmContainer.setAttribute("vote", filmData.vote_average);

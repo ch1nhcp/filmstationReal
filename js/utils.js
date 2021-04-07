@@ -17,3 +17,7 @@ export function getDataFromDoc(doc) {
         ...doc.data()
     };
 }
+
+export function getDataFromDocs(docs) {
+    return docs.map(doc => getDataFromDoc(doc));
+}

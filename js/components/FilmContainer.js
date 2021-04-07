@@ -20,6 +20,8 @@ export default class FilmContainer extends HTMLElement {
     super();
     this.appendChild($template.content.cloneNode(true));
 
+    this.$movieCard = this.querySelector(".movie-card");
+
     this.$title = this.querySelector("#title");
     this.$poster = this.querySelector("#poster");
     this.$vote = this.querySelector("#vote");
@@ -35,13 +37,20 @@ export default class FilmContainer extends HTMLElement {
         this.$title.innerHTML = newValue;
         break;
       case "poster":
-        this.$poster.src = "https://image.tmdb.org/t/p/w500" + newValue;
+        let url = (newValue.indexOf("https://image.tmdb.org") >- 1) ? newValue : "https://image.tmdb.org/t/p/w500" + newValue;
+        this.$poster.src = url;
         break;
       case "vote":
         this.$vote.innerHTML = newValue;
         break;
     }
   }
+
+  connectedCallback(){
+    this.$movieCard.onclick = () =>{
+      router.navigate("/book-ticket/" + this.id);
+    }
+  } 
 }
 
 window.customElements.define("film-container", FilmContainer);

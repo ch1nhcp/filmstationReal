@@ -10,3 +10,5 @@ import FilmContainer from './components/FilmContainer.js';
 import AuthScreen from './screens/AuthScreen.js';
 import IndexScreen from './screens/IndexScreen.js';
 import TrendingScreen from './screens/TrendingScreen.js';
+import TheaterScreen from './screens/TheaterScreen.js';
+import BookTicketScreen from './screens/BookTicketScreen.js';

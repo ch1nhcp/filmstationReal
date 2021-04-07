@@ -53,6 +53,7 @@ export default class TrendingScreen extends HTMLElement {
 
     async showFilms() {
         let data = await this.loadFilms(this.currentPage);
+        console.log(data.results);
         this.$filmList.setAttribute('films', JSON.stringify(data.results));
     }
 }
